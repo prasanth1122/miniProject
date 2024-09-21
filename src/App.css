@@ -1,0 +1,42 @@
+.App {
+  display: flex;
+  align-items: flex-start;
+  width: 100vw;
+  height: 100vh; /* Full viewport height */
+  overflow-y: hidden; /* Disable vertical scrolling */
+}
+
+.mainPage {
+  flex: 1;
+  height: 100vh; /* Ensure it takes the full height */
+  overflow-y: auto; /* Enable scrolling on this div */
+}
+.containers {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+}
+.second-container {
+  display: flex;
+  height: 100vh;
+  flex: 1;
+  flex-direction: column;
+  gap: 20px;
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+  .containers {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .second-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    margin-left: 50px;
+  }
+}
